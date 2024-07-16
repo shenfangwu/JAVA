@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JAVA.iml" filepath="$PROJECT_DIR$/.idea/JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/api-app/api-app.iml" filepath="$PROJECT_DIR$/javaeePro/api-app/api-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeeProMax/api-app1/api-app1.iml" filepath="$PROJECT_DIR$/javaeeProMax/api-app1/api-app1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeeProMax/api-app2/api-app2.iml" filepath="$PROJECT_DIR$/javaeeProMax/api-app2/api-app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/array-app/array-app.iml" filepath="$PROJECT_DIR$/javaeePro/array-app/array-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/basic-app/basic-app.iml" filepath="$PROJECT_DIR$/javaeePro/basic-app/basic-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/case-exercise/case-exercise.iml" filepath="$PROJECT_DIR$/javaeePro/case-exercise/case-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/flow-control-app/flow-control-app.iml" filepath="$PROJECT_DIR$/javaeePro/flow-control-app/flow-control-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/helloworld-app/helloworld-app.iml" filepath="$PROJECT_DIR$/javaeePro/helloworld-app/helloworld-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/method-app/method-app.iml" filepath="$PROJECT_DIR$/javaeePro/method-app/method-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/oop-app/oop-app.iml" filepath="$PROJECT_DIR$/javaeePro/oop-app/oop-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeeProMax/oop-app1/oop-app1.iml" filepath="$PROJECT_DIR$/javaeeProMax/oop-app1/oop-app1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeeProMax/oop-app2/oop-app2.iml" filepath="$PROJECT_DIR$/javaeeProMax/oop-app2/oop-app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeeProMax/oop-app3/oop-app3.iml" filepath="$PROJECT_DIR$/javaeeProMax/oop-app3/oop-app3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaeePro/system-app/system-app.iml" filepath="$PROJECT_DIR$/javaeePro/system-app/system-app.iml" />
+    </modules>
+  </component>
+</project>
