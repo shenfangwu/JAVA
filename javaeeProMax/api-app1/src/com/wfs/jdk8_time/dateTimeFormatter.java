@@ -21,6 +21,7 @@ public class dateTimeFormatter {
         String str = localDateTime.format(dateTimeFormatter);
         System.out.println(str);
         // 4 LocalDateTime解析时间
-        System.out.println(localDateTime.parse("2024-05-04 20:33:12", dateTimeFormatter));
+        LocalDateTime localDateTime1 = localDateTime.parse("2024-05-04 20:33:12", dateTimeFormatter);
+        System.out.println(localDateTime1);
     }
 }
