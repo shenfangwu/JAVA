@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/api-app1/api-app1.iml" filepath="$PROJECT_DIR$/api-app1/api-app1.iml" />
       <module fileurl="file://$PROJECT_DIR$/api-app2/api-app2.iml" filepath="$PROJECT_DIR$/api-app2/api-app2.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection-app/collection-app.iml" filepath="$PROJECT_DIR$/collection-app/collection-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-io-app/file-io-app.iml" filepath="$PROJECT_DIR$/file-io-app/file-io-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaeeProMax.iml" filepath="$PROJECT_DIR$/javaeeProMax.iml" />
       <module fileurl="file://$PROJECT_DIR$/map-app/map-app.iml" filepath="$PROJECT_DIR$/map-app/map-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-app1/oop-app1.iml" filepath="$PROJECT_DIR$/oop-app1/oop-app1.iml" />
