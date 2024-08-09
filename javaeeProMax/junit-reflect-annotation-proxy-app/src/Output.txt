@@ -1,0 +1,3 @@
+name=null
+age=0
+score=0.0
