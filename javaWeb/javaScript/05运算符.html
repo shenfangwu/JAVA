@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05JS运算符</title>
+    <script>
+        <!--  运算符      -->
+        alert("算术运算符：+ , - , * , / , % , ++ , --\n" +
+            " 赋值运算符：= , += , -= , *= , /= , %=\n" +
+            " 比较运算符：> , < , >= , <= , != , == , === \n" +
+            " 逻辑运算符：&& , || , !\n" +
+            " 三元运算符：条件表达式 ? true_value: false_value\n");
+
+        <!-- 类型转换 -->
+        var a = 10;
+        alert("a == 10 is"+(a == "10")); //true
+        alert("a == 10 is"+(a === "10")); //false
+        alert("a == 10 is"+(a === 10)); //true
+        // 字符串类型转数字
+        alert(parseInt("hello"));
+        alert(parseInt("123hello"));
+        // 其他类型转布尔
+        // 1 将字符串字面值转为数字。 如果字面值不是数字，则转为NaN
+        if(0){
+            console.log("0转换为false")
+        }
+        if(NaN){
+            console.log("NaN转换为false")
+        }
+        if(""){
+            console.log("空字符串转换为false")
+        }
+        if (null){
+            console.log("null转换为false")
+        }
+        if (undefined){
+            console.log("undefined转换为false")
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

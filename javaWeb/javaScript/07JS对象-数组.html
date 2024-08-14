@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07JS数组</title>
+    <script>
+        alert("JavaScript 中的数组相当于 Java 中集合，数组的长度是可变的，而 JavaScript 是弱类型，所以可以存储任意的类型的数据。");
+        // 1 定义数组
+        var array = new Array(1,2,3,"wfs","101",true);
+        // 2 遍历数组
+        for (let i = 0; i < array.length; i++) {
+            // 3 访问数组
+            console.log(array[i]);
+        }
+        // 4 数组常用方法
+        array.forEach(function (i){
+            console.log("foreach遍历"+i);
+        });
+        array.push("test");// 数组末尾添加元素
+        var removed = array.splice(2,2);// 从索引2开始删除2个元素
+        console.log(removed);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

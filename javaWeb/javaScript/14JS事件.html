@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS事件</title>
+    <script>
+        // 1通过 HTML标签中的事件属性进行绑定
+        function subfn(){
+            alert("已经提交！");
+        }
+        function fn1(){
+            console.log("触发单击事件!");
+        }
+        function bfn(){
+            console.log("元素失去焦点触发！");
+        }
+        function ffn(){
+            console.log("元素获得焦点触发！");
+        }
+        function kfn(){
+            console.log("某个键盘的键被按下触发！");
+        }
+        function over(){
+            console.log("鼠标被移到某元素之上触发");
+        }
+        function out(){
+            console.log("鼠标从某元素移开触发");
+        }
+        // 2 通过 DOM 元素属性绑定
+        // 获取所有的 <td> 元素
+        window.onload = function (){
+            var tds = document.getElementsByTagName("td");
+            for (var i = 0; i < tds.length; i++) {
+                tds[i].addEventListener("mouseover", function() {
+                    // 在这里添加你想要执行的代码
+                    console.log("Mouse over TD element");
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="" style="text-align: center;" onsubmit="subfn()">
+    <input type="text" name="username" onblur="bfn()" onfocus="ffn()" onkeydown="kfn()">
+
+    <input id="b1" type="submit" value="提交">
+
+    <input id="b2" type="button" value="单击事件" onclick="fn1()">
+</form>
+
+<br><br><br>
+
+<table width="800px" border="1" cellspacing="0" align="center" onmouseover = over() onmouseout=out()>
+    <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>分数</th>
+        <th>评语</th>
+    </tr>
+    <tr align="center">
+        <td>001</td>
+        <td>张三</td>
+        <td>90</td>
+        <td>很优秀</td>
+    </tr>
+    <tr align="center">
+        <td>002</td>
+        <td>李四</td>
+        <td>92</td>
+        <td>优秀</td>
+    </tr>
+</table>
+</body>
+
+</html>

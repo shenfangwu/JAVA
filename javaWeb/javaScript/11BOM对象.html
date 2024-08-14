@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM对象</title>
+  <script>
+    /**
+     * Browser Object Model:浏览器对象模型
+     * 包括Window Navigator Screen History Location
+     */
+    //1 Window对象的方法
+    window.alert("123");// 显示带有一段消息和一个确认按钮的警告框
+    if(window.confirm("确定吗？")){// 显示带有一段消息以及确认按钮和取消按钮的对话框
+      alert("你点的是确定");
+    }else{
+      alert("你点的是取消");
+    }
+    var cnt = 0;
+    window.setInterval(function (){// 按照指定的周期来调用函数或计算表达式
+      cnt++;
+      console.log("爱你"+cnt+"遍！");
+    },1000);
+    setTimeout(function (){// 在指定毫秒后调用函数或计算表达式
+      alert("延迟3s只执行1次！！！")
+    },3000);
+    // 2 Location对象
+    alert(location.href);// 地址栏URL
+    location.href="https://www.baidu.com";// 赋值后可跳转指定URL
+  </script>
+</head>
+<body>
+
+</body>
+</html>
