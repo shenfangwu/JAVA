@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue指令</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    // 1 v-bind v-model
+    <br>
+    <a v-bind:href="url">链接1</a>// 为HTML标签绑定属性值，如设置 href , css样式等
+    <br>
+    <a :href="url">链接2</a>
+    <br>
+    <input type="text" v-model="url">// 在表单元素上创建双向数据绑定
+    <br>
+    // 2 v-on 为HTML标签绑定事件
+    <br>
+    <input type="button" value="点我一下" v-on:click="handle()">
+    <input type="button" value="点我一下" @click="handle()">
+    // 3 v-if v-show
+    <br>
+    年龄<input type="text" v-model="age">经判定,为:
+    <span v-if="age <= 35">年轻人(35及以下)</span>
+    <span v-else-if="age > 35 && age < 60">中年人(35-60)</span>
+    <span v-else>老年人(60及以上)</span>
+    <br><br>
+    年龄<input type="text" v-model="age">经判定,为:
+    <span v-show="age <= 35">年轻人(35及以下)</span>
+    <span v-show="age > 35 && age < 60">中年人(35-60)</span>
+    <span v-show="age >= 60">老年人(60及以上)</span>
+    // 4 v-for 列表渲染，遍历容器的元素或者对象的属性
+    <br>
+    <br>
+    <div v-for="addr in addrs">{{addr}}</div>
+    <hr>
+    <div v-for="(addr,index) in addrs">{{index + 1}} : {{addr}}</div>
+</div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            age:20,
+            url:"https://www.baidu.com",
+            addrs: ['北京','上海','广州','深圳','成都','杭州']
+        },
+        methods:{
+            handle: function(){
+                alert("你点我了一下...");
+            }
+        }
+    })
+</script>
+</html>
