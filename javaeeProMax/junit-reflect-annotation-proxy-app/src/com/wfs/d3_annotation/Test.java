@@ -28,9 +28,12 @@ public class Test {
     public static void main(String[] args) throws Exception {
         Test test = new Test();
         Class c = Test.class;
+        // 1获取所有成员方法
         Method[] methods= c.getDeclaredMethods();
         for (Method method : methods) {
+            // 2注解的解析：判断当前对象是否使用了指定的注解，如果使用了则返回true，否则false
             if(method.isAnnotationPresent(MyTest.class)){
+                // 3执行方法
                 method.invoke(test);
             }
         }
