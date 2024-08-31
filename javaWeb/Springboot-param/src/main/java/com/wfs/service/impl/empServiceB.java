@@ -5,10 +5,11 @@ import com.wfs.pojo.Emp;
 import com.wfs.service.empService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component// 将当前类交给IOC容器管理，成为IOC容器的bean
+@Service// 将当前类交给IOC容器管理，成为IOC容器的bean,Service标注在业务类上
 public class empServiceB implements empService {
     @Autowired// 运行时，IOC容器会提供该类型的bean对象，并赋值给该变量--依赖注入
     private empDao empDao;

@@ -1,11 +1,8 @@
 package com.wfs.service.impl;
 
 import com.wfs.Dao.empDao;
-import com.wfs.Dao.impl.empDaoA;
 import com.wfs.pojo.Emp;
 import com.wfs.service.empService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
