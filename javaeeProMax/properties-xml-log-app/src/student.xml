@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- 这是注释 -->
 <students>
-    <student id = "1" >
+    <student id = "1" sex ="男">
         <name>wfs</name>
         <score>100</score>
     </student>
@@ -12,5 +12,5 @@
     <student id = "3">
         <name>lgc</name>
         <score>80</score>
-        </student>
+    </student>
 </students>
