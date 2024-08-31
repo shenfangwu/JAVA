@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<emps>
+    <emp>
+        <name>吴方石</name>
+        <age>55</age>
+        <image>https://web-framework.oss-cn-hangzhou.aliyuncs.com/web/1.jpg</image>
+        <!-- 1: 男, 2: 女 -->
+        <gender>1</gender>
+        <!-- 1: 员工, 2: 组长 , 3: 厂长 -->
+        <job>1</job>
+    </emp>
+
+    <emp>
+        <name>蒋思聪</name>
+        <age>65</age>
+        <image>https://web-framework.oss-cn-hangzhou.aliyuncs.com/web/2.jpg</image>
+        <gender>1</gender>
+        <job>1</job>
+    </emp>
+
+    <emp>
+        <name>王组长</name>
+        <age>45</age>
+        <image>https://web-framework.oss-cn-hangzhou.aliyuncs.com/web/3.jpg</image>
+        <gender>1</gender>
+        <job>2</job>
+    </emp>
+
+    <emp>
+        <name>王厂长</name>
+        <age>38</age>
+        <image>https://web-framework.oss-cn-hangzhou.aliyuncs.com/web/4.jpg</image>
+        <gender>2</gender>
+        <job>3</job>
+    </emp>
+</emps>
