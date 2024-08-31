@@ -3,9 +3,10 @@ package com.wfs.Dao.impl;
 import com.wfs.Dao.empDao;
 import com.wfs.pojo.Emp;
 import com.wfs.utils.XmlParserUtils;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-
+@Component// 将当前类交给IOC容器管理，成为IOC容器的bean
 public class empDaoA implements empDao {
     /**
      * 解析XML文件

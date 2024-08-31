@@ -4,6 +4,7 @@ import com.wfs.pojo.Result;
 import com.wfs.service.empService;
 import com.wfs.service.impl.empServiceA;
 import com.wfs.utils.XmlParserUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,9 @@ import java.util.List;
  */
 @RestController
 public class empController {
-    private empService empService = new empServiceA();
+    @Autowired//运行时，IOC容器会提供该类型的bean对象，并赋值给该变量--依赖注入
+    private empService empService;
+    // private empService empService = new empServiceA();
 
     /**
      * 接收从service层返回的对象list，对其包装成Result对象送至前端

@@ -1,7 +1,6 @@
 package com.wfs.service.impl;
 
 import com.wfs.Dao.empDao;
-import com.wfs.Dao.impl.empDaoA;
 import com.wfs.pojo.Emp;
 import com.wfs.service.empService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,9 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-// @Component 注释掉的话 IOC就会依赖注入切换为另一个类了
-public class empServiceA implements empService {
-    // @Autowired
+@Component// 将当前类交给IOC容器管理，成为IOC容器的bean
+public class empServiceB implements empService {
+    @Autowired// 运行时，IOC容器会提供该类型的bean对象，并赋值给该变量--依赖注入
     private empDao empDao;
     // private empDao empDao = new empDaoA();
 
@@ -26,9 +25,9 @@ public class empServiceA implements empService {
         empList.stream().forEach(emp->{
             String gender = emp.getGender();
             if("1".equals(gender)){
-                emp.setGender("男");
+                emp.setGender("男性");
             } else if ("2".equals(gender)) {
-                emp.setGender("女");
+                emp.setGender("女性");
             }
             String job = emp.getJob();
             if("1".equals(job)){
