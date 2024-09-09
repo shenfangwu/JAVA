@@ -1,13 +1,13 @@
-package com.example;
+package com.wfs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootMybatisCurdApplication {
+public class SpringbootMybatisCrudApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootMybatisCurdApplication.class, args);
+        SpringApplication.run(SpringbootMybatisCrudApplication.class, args);
     }
 
 }
